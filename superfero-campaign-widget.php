@@ -1,13 +1,5 @@
 <?php
 /*
-Plugin Name: Superfero Online Courses Widget
-Plugin URI: http://www.superfero.com/
-Description: Superfero Widget grabs the lastest online courses from superfero.com to display on your sidebar
-Author: Lan Nguyen
-Version: 1.1
-Author URI: http://www.superfero.com/
-*/
-/*
 * Superfero_Campaign_Widget Class
 */
 class Superfero_Campaign_Widget extends WP_Widget
@@ -20,8 +12,6 @@ class Superfero_Campaign_Widget extends WP_Widget
     $widget_ops = array( 'classname' => 'Superfero_Campaign_Widget', 'description' => SUPERFERO_DESCRIPTION );
     $this->WP_Widget( 'Superfero_Campaign_Widget', SUPERFERO_TITLE, $widget_ops );
     
-    add_action( 'save_post', array( $this, 'flush_widget_cache' ) );
-    add_action( 'deleted_post', array( $this, 'flush_widget_cache' ) );
     add_action( 'switch_theme', array( $this, 'flush_widget_cache' ) );
     add_action( 'wp_head', array( $this, 'add_css' ) );
   }
@@ -108,10 +98,6 @@ class Superfero_Campaign_Widget extends WP_Widget
     
     $this->flush_widget_cache();
 
-    $alloptions = wp_cache_get( 'alloptions', 'options' );
-    if ( isset( $alloptions['superfero'] ) )
-      delete_option( 'superfero' );
-
     return $instance;
   }
  
@@ -143,7 +129,7 @@ class Superfero_Campaign_Widget extends WP_Widget
    * delete superfero widget cache 
   */
   function flush_widget_cache() {
-    wp_cache_delete( 'superfero', 'widget' );
+    wp_cache_delete( 'superfero-courses', 'widget' );
   }
 
   /** 

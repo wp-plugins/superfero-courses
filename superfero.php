@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: Superfero Online Courses Widget
-Plugin URI: http://www.superfero.com/
-Description: Superfero Widget grabs the lastest online courses from superfero.com to display on your sidebar
+Plugin Name: Superfero Courses Widget
+Plugin URI: http://wordpress.org/plugins/superfero-courses/
+Description: Superfero Widget grabs the latest online courses from superfero.com to display on your sidebar
 Author: Lan Nguyen
-Version: 1.1
-Author URI: http://www.superfero.com/
+Version: 1.2
+Author URI: http://wordpress.org/plugins/superfero-courses/
 */
 /*  Copyright 2014 Lan Nguye (email: nhlan82 at gmail.com)
 

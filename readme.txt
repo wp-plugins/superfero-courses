@@ -1,10 +1,10 @@
 === Superfero ===
 Contributors: Superfero
 Donate link: 
-Tags: superfero, online course, wordpress, plugin, widget
+Tags: superfero, courses, online courses, e-learning, wordpress, plugin, widget
 Requires at least: 3.8
 Tested up to: 3.8.1
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,7 +38,7 @@ Actually these languages are supported:
 
 == Screenshots ==
 
-1. screenshot-1.png 
+1. (screenshot-1.png) The first screenshot shows the widget in the sidebar with a title, an author email, number of courses to show, select the course's language and show items in thumbview.
 
 == Installation ==
 
@@ -69,7 +69,7 @@ Actually these languages are supported:
 
 == Changelog ==
 
-= 1.1 =
+= 1.2 =
 * 2014-07-23
 * Add settings as number of course to show, language of courses
 * Improved code for more robustness
@@ -80,10 +80,10 @@ Actually these languages are supported:
 
 == Upgrade Notice ==
 
-= 1.1 =
+= 1.2 =
 * 2014-07-23
-More options and improved code
+* More options and improved code
 
 = 1.0 =
 * 2014-07-23
-First release.
+* First release.
