@@ -4,7 +4,7 @@ Donate link:
 Tags: superfero, online course, wordpress, plugin, widget
 Requires at least: 3.8
 Tested up to: 3.8.1
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,11 +16,25 @@ Superfero.com is an online implementation platform that will multiply the impact
 
 This widget grabs the latest online courses from superfero.com to display on your sidebar.
 
+The widget is available in english
+
 == Frequently Asked Questions ==
 
-Do you have questions or issues with Superfero Widget? Use these support channels appropriately.
+= What are the requirements for this plugin? =
 
-[Support](http://http://www.superfero.com/)
+The WordPress version should be at least 2.9 to use.
+
+= Which languages does the plugin support? =
+
+Actually these languages are supported:
+
+* English
+
+= Do you have questions or issues with Superfero Widget? Use these support channels appropriately. =
+
+[Superfero](http://www.superfero.com/)
+
+[Support](http://wordpress.org/plugins/superfero-courses)
 
 == Screenshots ==
 
@@ -28,21 +42,48 @@ Do you have questions or issues with Superfero Widget? Use these support channel
 
 == Installation ==
 
-Installing "Superfero" can be done either by searching for "Superfero" via the "Plugins > Add New" screen in your WordPress dashboard, or by using the following steps:
+= Using The WordPress Dashboard =
 
-1. Download the plugin via WordPress.org
-1. Upload the ZIP file through the 'Plugins > Add New > Upload' screen in your WordPress dashboard
-1. Activate the plugin through the 'Plugins' menu in WordPress
+1. Navigate to the 'Add New' in the plugins dashboard
+2. Search for 'Superfero'
+3. Click 'Install Now'
+4. Activate the plugin on the Plugin dashboard
+5. Go to 'Appereance' => 'Widgets' and select 'Superfero Courses'
+
+= Uploading in WordPress Dashboard =
+
+1. Navigate to the 'Add New' in the plugins dashboard
+2. Navigate to the 'Upload' area
+3. Select `superfero-courses.zip` from your computer
+4. Click 'Install Now'
+5. Activate the plugin in the Plugin dashboard
+6. Go to 'Appereance' => 'Widgets' and select 'Superfero Courses'
+
+= Using FTP =
+
+1. Download `superfero-courses.zip`
+2. Extract the `superfero-courses` directory to your computer
+3. Upload the `superfero-courses` directory to the `/wp-content/plugins/` directory
+4. Activate the plugin in the Plugin dashboard
+5. Go to 'Appereance' => 'Widgets' and select 'Superfero Courses'
 
 == Changelog ==
 
+= 1.1 =
+* 2014-07-23
+* Add settings as number of course to show, language of courses
+* Improved code for more robustness
+
 = 1.0 =
-* 2014-07-15
-* Initial release
+* 2014-07-23
+* The plugin was released.
 
 == Upgrade Notice ==
 
 = 1.1 =
-* 2014-07-17
-* A major change has been made to the internal structure. 
-* Accessibility improvement: add settings as number of course to show, language of courses
+* 2014-07-23
+More options and improved code
+
+= 1.0 =
+* 2014-07-23
+First release.
