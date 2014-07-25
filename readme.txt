@@ -70,7 +70,7 @@ Actually these languages are supported:
 == Changelog ==
 
 = 1.5 =
-* 2014-07-23
+* 2014-07-25
 * Change API server
 
 = 1.2 =
@@ -85,7 +85,7 @@ Actually these languages are supported:
 == Upgrade Notice ==
 
 = 1.5 =
-* 2014-07-23
+* 2014-07-25
 * Change API server
 
 = 1.2 =
