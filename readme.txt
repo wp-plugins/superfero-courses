@@ -4,7 +4,7 @@ Donate link:
 Tags: superfero, courses, online courses, e-learning, wordpress, plugin, widget
 Requires at least: 3.8
 Tested up to: 3.8.1
-Stable tag: 1.2
+Stable tag: 1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -69,6 +69,10 @@ Actually these languages are supported:
 
 == Changelog ==
 
+= 1.5 =
+* 2014-07-23
+* Change API server
+
 = 1.2 =
 * 2014-07-23
 * Add settings as number of course to show, language of courses
@@ -79,6 +83,10 @@ Actually these languages are supported:
 * The plugin was released.
 
 == Upgrade Notice ==
+
+= 1.5 =
+* 2014-07-23
+* Change API server
 
 = 1.2 =
 * 2014-07-23

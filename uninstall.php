@@ -18,7 +18,7 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 * Delete options from the database while deleting the plugin files
 * Run before deleting the plugin
 *
-* @since   1.2
+* @since   1.5
 */
 // remove settings
 delete_option( 'widget_superfero_campaign_widget' );

@@ -1,5 +1,5 @@
 <?php
-define( 'SUPERFERO_URL', 'http://www.superfero-test.appspot.com/' );
+define( 'SUPERFERO_URL', 'http://www.superfero.com/' );
 define( 'SUPERFERO_NAMESPACE', 'www' );
 define( 'SUPERFERO_TITLE', 'Superfero Courses' );
 define( 'SUPERFERO_DESCRIPTION', 'The lastest online courses from superfero.com' );
