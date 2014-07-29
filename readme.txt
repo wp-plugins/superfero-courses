@@ -1,14 +1,14 @@
 === Superfero ===
-Contributors: Superfero
+Contributors: Superfero Courses 
 Donate link: 
 Tags: superfero, courses, online courses, e-learning, wordpress, plugin, widget
 Requires at least: 3.8
 Tested up to: 3.8.1
-Stable tag: 1.5
+Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Superfero Widget grabs the latest online courses from superfero.com to display on your sidebar
+Superfero Courses Widget grabs the latest online courses from superfero.com to display on your sidebar
 
 == Description ==
 
@@ -16,7 +16,7 @@ Superfero.com is an online implementation platform that will multiply the impact
 
 This widget grabs the latest online courses from superfero.com to display on your sidebar.
 
-The widget is available in english
+Superfero Courses Widget is available in english and denish.
 
 == Frequently Asked Questions ==
 
@@ -29,16 +29,17 @@ The WordPress version should be at least 2.9 to use.
 Actually these languages are supported:
 
 * English
+* Denish
 
 = Do you have questions or issues with Superfero Widget? Use these support channels appropriately. =
 
-[Superfero](http://www.superfero.com/)
+* [Superfero](http://www.superfero.com/)
 
-[Support](http://wordpress.org/plugins/superfero-courses)
+* [Support](http://wordpress.org/plugins/superfero-courses)
 
 == Screenshots ==
 
-1. (screenshot-1.png) The first screenshot shows the widget in the sidebar with a title, an author email, number of courses to show, select the course's language and show items in thumbview.
+1. 1 - The first screenshot shows the widget in the sidebar with a title, an author email, number of courses to show, select the course's language and show items in thumbview.
 
 == Installation ==
 
@@ -69,6 +70,12 @@ Actually these languages are supported:
 
 == Changelog ==
 
+= 2.0 =
+* 2014-07-25
+* Add Denish language
+* Improved code
+* Updated readme.txt
+
 = 1.5 =
 * 2014-07-25
 * Change API server
@@ -83,6 +90,12 @@ Actually these languages are supported:
 * The plugin was released.
 
 == Upgrade Notice ==
+
+= 2.0 =
+* 2014-07-25
+* Change Readme.txt
+* Improved code
+* Add Denish
 
 = 1.5 =
 * 2014-07-25
