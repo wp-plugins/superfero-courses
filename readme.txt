@@ -1,4 +1,4 @@
-=== Superfero ===
+=== Superfero Courses ===
 Contributors: Superfero Courses 
 Donate link: 
 Tags: superfero, courses, online courses, e-learning, wordpress, plugin, widget
