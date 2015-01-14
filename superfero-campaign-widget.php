@@ -152,12 +152,9 @@ class Superfero_Campaign_Widget extends WP_Widget
               $name = $item['name'];
               $deadline = $item['deadline'];
               $thumb = $item['thumb_url'];
-              $template = $item['template'];
+              #$template = $item['template'];
               
-              if ( $template )
-                $url = SUPERFERO_URL . 'course/' . $item['slug'];
-              else 
-                $url = SUPERFERO_URL . 'sf#/group/' . $item['slug'];
+              $url = SUPERFERO_URL . 'course/' . $item['slug'];
               
               if ( empty( $name ) ) $name = 'New course';
 

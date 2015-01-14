@@ -3,7 +3,7 @@
  * Fired when the plugin is uninstalled.
  *
  * @package   Superfero_Campaign_Widget
- * @author    Lan Nguyen <nhlan82@gmail.com>
+ * @author    Lan Nguyen <lan.nguyen@superfero.com>
  * @license   GPL-2.0+
  * @link      http://wordpress.org/plugins/superfero-courses/
  * @copyright 2014 
@@ -18,7 +18,7 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 * Delete options from the database while deleting the plugin files
 * Run before deleting the plugin
 *
-* @since   1.5
+* @since   2.2
 */
 // remove settings
 delete_option( 'widget_superfero_campaign_widget' );
