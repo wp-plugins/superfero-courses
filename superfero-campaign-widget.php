@@ -49,6 +49,7 @@ class Superfero_Campaign_Widget extends WP_Widget
     $author = $instance['author'];
     $view = $instance['view'];
 ?>
+  <input class="widefat" id="<?php echo $this->get_field_id('lang'); ?>" name="<?php echo $this->get_field_name('lang'); ?>" type="hidden" value="" />
   <p>
     <label for="<?php echo $this->get_field_id('title'); ?>">Title:</label>
     <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo attribute_escape($title); ?>" />
@@ -63,16 +64,6 @@ class Superfero_Campaign_Widget extends WP_Widget
       <?php
       foreach ( $option_number as $option ) {
           echo '<option value="' . $option . '" id="' . $option . '"' , $number == $option ? ' selected="selected"' : '' , '>' , $option , '</option>';
-      }
-      ?>
-    </select>
-  </p>
-  <p>
-    <label for="<?php echo $this->get_field_id('lang'); ?>">Select the course's language:</label> 
-    <select name="<?php echo $this->get_field_name('lang'); ?>" id="<?php echo $this->get_field_id('lang'); ?>">
-      <?php
-      foreach ( $option_language as $key => $value ) {
-          echo '<option value="' . $key . '" id="' . $key . '"' ,  $lang == $key ? ' selected="selected"' : '' , '>' , $value , '</option>';
       }
       ?>
     </select>
@@ -137,7 +128,8 @@ class Superfero_Campaign_Widget extends WP_Widget
   */
   function superfero_list($author, $view, $lang, $num, $title) 
   {
-    $superfero_api_url = SUPERFERO_URL . 'api/campaignwordpress?num=' . $num . '&lang=' . $lang . '&author=' . $author . '&namespace=' . SUPERFERO_NAMESPACE;
+    #$superfero_api_url = SUPERFERO_URL . 'api/campaignwordpress?num=' . $num . '&lang=' . $lang . '&author=' . $author . '&namespace=' . SUPERFERO_NAMESPACE;
+    $superfero_api_url = SUPERFERO_URL . 'api/campaignwordpress?author=' . $author ;
     $response = wp_remote_retrieve_body( wp_remote_get( $superfero_api_url, array( 'sslverify' => false ) ) );
     
     if( !is_wp_error( $response ) ) {
@@ -147,29 +139,31 @@ class Superfero_Campaign_Widget extends WP_Widget
         if ( $data['result'] ) {
           
           if ( $view != 1 ) echo '<ul>';
-          
+          $i = 0;
           foreach( $data['courses'] as $item ) {
               $name = $item['name'];
               $deadline = $item['deadline'];
               $thumb = $item['thumb_url'];
+              $i++;
               #$template = $item['template'];
               
               $url = SUPERFERO_URL . 'course/' . $item['slug'];
               
-              if ( empty( $name ) ) $name = 'New course';
-
-              if ( $view != 1 ) {
-                echo '<li>';
-                echo "<a href='$url' title='$title - $name' target='_blank'>" . $name . "</a> ";
-                echo '</li>';
-              } else {
-                echo "<p class='superfero'>";
-                if ( !empty( $thumb ) ) {
-                  echo "<a href='$url' title='' target='_blank'><img src='$thumb' alt='$title - $name' border='0' /></a> ";
-                }
-                echo "<a href='$url' title='$title - $name' target='_blank' class='title'>" . $name . "</a> ";
-                echo '</p>'; 
-              } 
+              if ( $i <= $num ) {
+                if ( empty( $name ) ) $name = 'New course';
+                if ( $view != 1 ) {
+                  echo '<li>';
+                  echo "<a href='$url' title='$title - $name' target='_blank'>" . $name . "</a> ";
+                  echo '</li>';
+                } else {
+                  echo "<p class='superfero'>";
+                  if ( !empty( $thumb ) ) {
+                    echo "<a href='$url' title='' target='_blank'><img src='$thumb' alt='$title - $name' border='0' /></a> ";
+                  }
+                  echo "<a href='$url' title='$title - $name' target='_blank' class='title'>" . $name . "</a> ";
+                  echo '</p>'; 
+                } 
+              }
           }
           
           if ( $view != 1 ) echo '</ul>';
