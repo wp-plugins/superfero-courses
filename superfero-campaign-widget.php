@@ -145,8 +145,11 @@ class Superfero_Campaign_Widget extends WP_Widget
               $thumb = $item['thumb_url'];
               $i++;
               
-              $url = SUPERFERO_URL . $item['path'] . '/' . $item['slug'];
-
+              if ( empty( $item['path'] ) ) {
+                $url = SUPERFERO_URL . 'course/' . $item['slug'];
+              } else {
+                $url = SUPERFERO_URL . $item['path'] . '/' . $item['slug'];
+              }
               if ( $i <= $num ) {
                 if ( empty( $name ) ) $name = 'New course';
                 if ( $view != 1 ) {
