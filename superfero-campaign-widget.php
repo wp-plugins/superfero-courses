@@ -128,7 +128,6 @@ class Superfero_Campaign_Widget extends WP_Widget
   */
   function superfero_list($author, $view, $lang, $num, $title) 
   {
-    #$superfero_api_url = SUPERFERO_URL . 'api/campaignwordpress?num=' . $num . '&lang=' . $lang . '&author=' . $author . '&namespace=' . SUPERFERO_NAMESPACE;
     $superfero_api_url = SUPERFERO_URL . 'api/campaignwordpress?author=' . $author ;
     $response = wp_remote_retrieve_body( wp_remote_get( $superfero_api_url, array( 'sslverify' => false ) ) );
     
@@ -145,10 +144,9 @@ class Superfero_Campaign_Widget extends WP_Widget
               $deadline = $item['deadline'];
               $thumb = $item['thumb_url'];
               $i++;
-              #$template = $item['template'];
               
-              $url = SUPERFERO_URL . 'course/' . $item['slug'];
-              
+              $url = SUPERFERO_URL . $item['path'] . '/' . $item['slug'];
+
               if ( $i <= $num ) {
                 if ( empty( $name ) ) $name = 'New course';
                 if ( $view != 1 ) {

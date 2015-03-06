@@ -4,7 +4,7 @@ Plugin Name: Superfero Courses Widget
 Plugin URI: http://wordpress.org/plugins/superfero-courses/
 Description: Superfero Courses Widget grabs the latest online courses from superfero.com to display on your sidebar
 Author: Lan Nguyen
-Version: 3.0
+Version: 3.2
 Author URI: http://wordpress.org/plugins/superfero-courses/
 */
 /*  Copyright 2014 Lan Nguyen (email: lan.nguye at superfero.com)
